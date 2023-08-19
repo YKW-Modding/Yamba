@@ -10,6 +10,8 @@ A Yo-Kai Watch position editor. Provide it with an encrypted .yw save file and i
 3. Run main.py
 4. Enter your options, then rename output.yw to gameX.yw (X being the save file number) and put it into the game
 
+**Note: Map codes can be found at https://tcrf.net/Notes:Yo-kai_Watch_(Nintendo_3DS)#Map_names if you need them!
+
 ## Credits
 
 https://github.com/Darkey28/yw_save
