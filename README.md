@@ -12,7 +12,9 @@ Only tested with YKW1 3DS.
 3. Run main.py
 4. Enter your options, then rename output.yw to gameX.yw (X being the save file number) and put it into the game
 
-**Note: Map codes can be found at https://tcrf.net/Notes:Yo-kai_Watch_(Nintendo_3DS)#Map_names if you need them!**
+### Map codes
+
+These can be found at https://tcrf.net/Notes:Yo-kai_Watch_(Nintendo_3DS)#Map_names if you need them!
 
 ### How time works
 
