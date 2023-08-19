@@ -34,6 +34,33 @@ def main():
 			print("Not an integer!")
 			main()
 	
+	timeIn = input("Time from -32767 to 32767: ")
+	if timeIn != "skip":
+		try:
+			time = int(timeIn)
+		except ValueError:
+			print("Not an integer!")
+			main()
+		if not -32767 <= time <= 32767 and timeIn != "skip":
+			print("Number is too large!")
+			main()
+	
+	sunTimeIn = input("Sun time (0 for midnight-midday and 1 for midday-midnight): ")
+	if sunTimeIn != "skip":
+		try:
+			sunTime = int(sunTimeIn)
+		except ValueError:
+			print("Not an integer!")
+			main()
+		if sunTime != 0 and sunTime != 1:
+			print("Not 0 or 1!")
+			main()
+	
+	keepDecrypted = input("Keep decrypted save file? (y/n): ")
+	if keepDecrypted != "y" and keepDecrypted != "n":
+		print("Not 'y' or 'n'!")
+		main()
+	
 	os.system("python yw_save/yw_save.py --game yw --decrypt " + save + " decrypted.yw")#
 	
 	with open("decrypted.yw", "r+b") as f:
@@ -49,9 +76,20 @@ def main():
 		if zCoordIn != "skip":
 			f.seek(28)
 			f.write(zCoord.to_bytes(4, byteorder = "little", signed = True))
-	
+		if timeIn != "skip":
+			f.seek(1488)
+			f.write(time.to_bytes(2, byteorder = "little", signed = True))
+		if sunTimeIn != "skip":
+			f.seek(1490)
+			if sunTime == 0:
+				f.write(int.to_bytes(1, 1, byteorder = "little"))
+			if sunTime == 1:
+				f.write(int.to_bytes(2, 1, byteorder = "little"))
+			
 	os.system("python yw_save/yw_save.py --game yw --encrypt decrypted.yw output.yw")
-	os.remove("decrypted.yw")
+	
+	if keepDecrypted == "n":
+		os.remove("decrypted.yw")
 	
 	input("Complete! File saved as output.yw. Press Enter to continue... ")
 	sys.exit()
