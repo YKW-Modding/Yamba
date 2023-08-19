@@ -1,5 +1,5 @@
 # Yamba
-A Yo-Kai Watch position editor. Provide it with an encrypted .yw save file and it can change the map you are in, as well as your X, Y and Z coordinates. 
+A Yo-Kai Watch position editor. Provide it with an encrypted .yw save file and it can change the map you are in, as well as your X, Y and Z coordinates. Only tested with YKW1 3DS.
 
 **NOTE: The game snaps you back onto the floor when changing the Y position. Keep this in mind!**
 
