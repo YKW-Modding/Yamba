@@ -5,6 +5,8 @@ Only tested with YKW1 3DS.
 
 **NOTE: The game snaps you back onto the floor when changing the Y position. Keep this in mind!**
 
+![image](https://github.com/YKW-Modding/Yamba/assets/115092262/9399076e-7307-4664-99cc-27955e08c71f)
+
 ## Usage
 
 1. Click on Code -> Download ZIP
