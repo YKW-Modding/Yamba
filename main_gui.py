@@ -14,7 +14,7 @@ class Ui(QtWidgets.QMainWindow):
 		mapCodeLink.setText('Map codes can be found <a href="https://tcrf.net/Notes:Yo-kai_Watch_(Nintendo_3DS)#Map_names">here!</a>')
 		
 		onlyInt = QtGui.QIntValidator()
-		onlyInt.setRange(-2147483647, 2147483647)
+		onlyInt.setRange(0, 65535)
 		
 		global xCoordText
 		xCoordText = self.findChild(QtWidgets.QLineEdit, "xCoordText")
@@ -28,12 +28,9 @@ class Ui(QtWidgets.QMainWindow):
 		zCoordText = self.findChild(QtWidgets.QLineEdit, "zCoordText")
 		zCoordText.setValidator(onlyInt)
 		
-		onlyIntTime = QtGui.QIntValidator()
-		onlyIntTime.setRange(-32767, 32767)
-		
 		global timeText
 		timeText = self.findChild(QtWidgets.QLineEdit, "timeText")
-		timeText.setValidator(onlyIntTime)
+		timeText.setValidator(onlyInt)
 		
 		global mapText
 		mapText = self.findChild(QtWidgets.QLineEdit, "mapText")
@@ -74,25 +71,29 @@ class Ui(QtWidgets.QMainWindow):
 				f.write(bytes(mapText.text(), 'utf-8'))
 			if xCoordText.text() != "":
 				xCoord = int(xCoordText.text())
-				f.seek(20)
-				f.write(xCoord.to_bytes(4, byteorder = "big", signed = True))
+				f.seek(22)
+				f.write(xCoord.to_bytes(2, byteorder = "big", signed = True))
 			if yCoordText.text() != "":
 				yCoord = int(yCoordText.text())
 				f.seek(24)
-				f.write(yCoord.to_bytes(4, byteorder = "big", signed = True))
+				f.write(yCoord.to_bytes(2, byteorder = "big", signed = True))
 			if zCoordText.text() != "":
 				zCoord = int(zCoordText.text())
 				f.seek(28)
-				f.write(zCoord.to_bytes(4, byteorder = "big", signed = True))
+				f.write(zCoord.to_bytes(2, byteorder = "big", signed = True))
 			if timeText.text() != "":
 				time = int(timeText.text())
 				f.seek(1488)
-				f.write(time.to_bytes(2, byteorder = "big", signed = True))
+				f.write(time.to_bytes(2, byteorder = "big", signed = False))
 			f.seek(1490)
-			if sunTimeComboBox.currentText() == "Midnight to Midday":
+			if sunTimeComboBox.currentText() == "Morning to Midday":
 				f.write(int.to_bytes(1, 1, byteorder = "big"))
-			if sunTimeComboBox.currentText() == "Midday to Midnight":
+			if sunTimeComboBox.currentText() == "Midday to Night":
 				f.write(int.to_bytes(2, 1, byteorder = "big"))
+			if sunTimeComboBox.currentText() == "Night to Midnight":
+				f.write(int.to_bytes(3, 1, byteorder = "big"))
+			if sunTimeComboBox.currentText() == "Midnight to Morning":
+				f.write(int.to_bytes(4, 1, byteorder = "big"))
 		
 		os.system("python yw_save/yw_save.py --game yw --encrypt decrypted.yw output.yw")
 		if keepDecryptedCheckBox.isChecked() == False:

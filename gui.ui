@@ -172,12 +172,22 @@
     </item>
     <item>
      <property name="text">
-      <string>Midnight to Midday</string>
+      <string>Morning to Midday</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Midday to Midnight</string>
+      <string>Midday to Night</string>
+     </property>
+    </item>
+	<item>
+     <property name="text">
+      <string>Night to Midnight</string>
+     </property>
+    </item>
+	<item>
+     <property name="text">
+      <string>Midnight to Morning</string>
      </property>
     </item>
    </widget>
@@ -214,7 +224,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Time (between -32767 and 32767):</string>
+     <string>Time (between 0 and 65535):</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
