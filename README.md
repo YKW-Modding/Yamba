@@ -9,6 +9,8 @@ Only tested with YKW1 3DS.
 
 ## Usage
 
+***Make sure you have your Python directory added to PATH before doing this!!!***
+
 1. Click on Code -> Download ZIP
 2. Extract the zip file
 3. Run either main_cmd.py or *main_gui.py (requires PyQt5)*
