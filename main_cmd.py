@@ -69,22 +69,22 @@ def main():
 			f.write(bytes(map, 'utf-8'))
 		if xCoordIn != "skip":
 			f.seek(20)
-			f.write(xCoord.to_bytes(4, byteorder = "little", signed = True))
+			f.write(xCoord.to_bytes(4, byteorder = "big", signed = True))
 		if yCoordIn != "skip":
 			f.seek(24)
-			f.write(yCoord.to_bytes(4, byteorder = "little", signed = True))
+			f.write(yCoord.to_bytes(4, byteorder = "big", signed = True))
 		if zCoordIn != "skip":
 			f.seek(28)
-			f.write(zCoord.to_bytes(4, byteorder = "little", signed = True))
+			f.write(zCoord.to_bytes(4, byteorder = "big", signed = True))
 		if timeIn != "skip":
 			f.seek(1488)
-			f.write(time.to_bytes(2, byteorder = "little", signed = True))
+			f.write(time.to_bytes(2, byteorder = "big", signed = True))
 		if sunTimeIn != "skip":
 			f.seek(1490)
 			if sunTime == 0:
-				f.write(int.to_bytes(1, 1, byteorder = "little"))
+				f.write(int.to_bytes(1, 1, byteorder = "big"))
 			if sunTime == 1:
-				f.write(int.to_bytes(2, 1, byteorder = "little"))
+				f.write(int.to_bytes(2, 1, byteorder = "big"))
 			
 	os.system("python yw_save/yw_save.py --game yw --encrypt decrypted.yw output.yw")
 	

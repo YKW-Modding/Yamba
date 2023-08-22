@@ -75,24 +75,24 @@ class Ui(QtWidgets.QMainWindow):
 			if xCoordText.text() != "":
 				xCoord = int(xCoordText.text())
 				f.seek(20)
-				f.write(xCoord.to_bytes(4, byteorder = "little", signed = True))
+				f.write(xCoord.to_bytes(4, byteorder = "big", signed = True))
 			if yCoordText.text() != "":
 				yCoord = int(yCoordText.text())
 				f.seek(24)
-				f.write(yCoord.to_bytes(4, byteorder = "little", signed = True))
+				f.write(yCoord.to_bytes(4, byteorder = "big", signed = True))
 			if zCoordText.text() != "":
 				zCoord = int(zCoordText.text())
 				f.seek(28)
-				f.write(zCoord.to_bytes(4, byteorder = "little", signed = True))
+				f.write(zCoord.to_bytes(4, byteorder = "big", signed = True))
 			if timeText.text() != "":
 				time = int(timeText.text())
 				f.seek(1488)
-				f.write(time.to_bytes(2, byteorder = "little", signed = True))
+				f.write(time.to_bytes(2, byteorder = "big", signed = True))
 			f.seek(1490)
 			if sunTimeComboBox.currentText() == "Midnight to Midday":
-				f.write(int.to_bytes(1, 1, byteorder = "little"))
+				f.write(int.to_bytes(1, 1, byteorder = "big"))
 			if sunTimeComboBox.currentText() == "Midday to Midnight":
-				f.write(int.to_bytes(2, 1, byteorder = "little"))
+				f.write(int.to_bytes(2, 1, byteorder = "big"))
 		
 		os.system("python yw_save/yw_save.py --game yw --encrypt decrypted.yw output.yw")
 		if keepDecryptedCheckBox.isChecked() == False:
