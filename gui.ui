@@ -12,7 +12,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Yamba v1.2 GUI</string>
+   <string>Yamba v1.3 GUI</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLineEdit" name="saveFileName">
@@ -227,7 +227,7 @@
      <string>Time (between 0 and 65535):</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="woganogText">
     <property name="geometry">
      <rect>
       <x>400</x>
@@ -238,6 +238,9 @@
     </property>
     <property name="text">
      <string>Program by Woganog.</string>
+    </property>
+	<property name="openExternalLinks">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="mapCodeLink">
@@ -250,7 +253,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>a</string>
+     <string>Map codes can be found here!</string>
     </property>
     <property name="openExternalLinks">
      <bool>true</bool>
