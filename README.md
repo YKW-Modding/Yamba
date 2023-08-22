@@ -30,7 +30,9 @@ These can be found at https://tcrf.net/Notes:Yo-kai_Watch_(Nintendo_3DS)#Map_nam
 
 ### How time works
 
-There is a value for the time that can be between 0 and 65535. For some strange reason, while that could've just been it, that huge range only spans a quarter of the possible times.Immediately after the value, there is another value that is always 1, 2, 3 or 4. 1 is morning to midday, 2 is midday to night, 3 is night to midnight and 4 is midnight to morning.
+There is a value for the time that can be between 0 and 65535. For some strange reason, while that could've just been it, that huge range only spans a quarter of the possible times.
+
+Immediately after the value, there is another value that is always 1, 2, 3 or 4. 1 is morning to midday, 2 is midday to night, 3 is night to midnight and 4 is midnight to morning.
 
 ## Credits
 
