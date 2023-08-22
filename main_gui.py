@@ -13,6 +13,9 @@ class Ui(QtWidgets.QMainWindow):
 		mapCodeLink = self.findChild(QtWidgets.QLabel, "mapCodeLink")
 		mapCodeLink.setText('Map codes can be found <a href="https://tcrf.net/Notes:Yo-kai_Watch_(Nintendo_3DS)#Map_names">here!</a>')
 		
+		woganogText = self.findChild(QtWidgets.QLabel, "woganogText")
+		woganogText.setText('Program by <a href="https://youtube.com/@Woganog">Woganog</a>.')
+		
 		onlyInt = QtGui.QIntValidator()
 		onlyInt.setRange(0, 65535)
 		
