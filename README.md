@@ -1,11 +1,19 @@
 # Yamba
-A Yo-Kai Watch save editor. Provide it with an encrypted .yw save file and it can change the map you are in, as well as your X, Y and Z coordinates and the time.
-
-Only tested with YKW1 3DS.
+A Yo-Kai Watch save editor. It currently is able to change the map you are in and the time. Position modification is currently broken. Only tested with YKW1 3DS.
 
 **NOTE: The game snaps you back onto the floor when changing the Y position. Keep this in mind!**
 
 ![image](https://github.com/YKW-Modding/Yamba/assets/115092262/9399076e-7307-4664-99cc-27955e08c71f)
+
+## What works:
+
+- Moving maps
+- Changine the time
+- Changing the sun time
+
+## What needs to be fixed:
+
+- Position modification
 
 ## Usage
 
@@ -22,9 +30,7 @@ These can be found at https://tcrf.net/Notes:Yo-kai_Watch_(Nintendo_3DS)#Map_nam
 
 ### How time works
 
-There is a value for the time that can be between 0 and 65535. For some strange reason, while that could've just been it, that huge range only spans half of the possible times, specifically, all of the times on the top half of the radar.
-
-Immediately after the value, there is another that is always either 1 or 2. If it is 1, then the first value will span all the times on the top half of the radar, whereas if it is 2, it will span all the times on the bottom half. I called this second value "sun time" for some reason. I really don't know why I called it that but it's a name.
+There is a value for the time that can be between 0 and 65535. For some strange reason, while that could've just been it, that huge range only spans a quarter of the possible times.Immediately after the value, there is another value that is always 1, 2, 3 or 4. 1 is morning to midday, 2 is midday to night, 3 is night to midnight and 4 is midnight to morning.
 
 ## Credits
 
