@@ -1,19 +1,16 @@
 # Yamba
-A Yo-Kai Watch save editor. It currently is able to change the map you are in and the time. Position modification is currently broken. Only tested with YKW1 3DS.
+A Yo-Kai Watch save editor. It currently is able to change the map you are in, as well as your position and the time. Only tested with YKW1 3DS.
 
 **NOTE: The game snaps you back onto the floor when changing the Y position. Keep this in mind!**
 
 ![image](https://github.com/YKW-Modding/Yamba/assets/115092262/9399076e-7307-4664-99cc-27955e08c71f)
 
-## What works:
+## Features:
 
 - Moving maps
+- Position modification
 - Changine the time
 - Changing the sun time
-
-## What needs to be fixed:
-
-- Position modification
 
 ## Usage
 
