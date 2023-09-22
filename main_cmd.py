@@ -11,7 +11,7 @@ while not os.path.exists(save) or ".yw" not in save:
 print("Leave any of the following blank to skip it.")
 
 print("You can get map codes from definitions.py")
-mapID = get_input("Map code (7 characters): ", lambda x: x if x in reverse_locations else None)
+mapID = get_input("Map code (7 characters): ", lambda x: x if len(x) == 7 else None)
 print("Coordinates from 0 to 4294967295")
 xCoord = get_input("X: ", lambda x: x if x.isdecimal() and int(x) <= 4294967295 else None)
 yCoord = get_input("Y: ", lambda x: x if x.isdecimal() and int(x) <= 4294967295 else None)
