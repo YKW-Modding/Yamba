@@ -1,0 +1,221 @@
+locations = {
+    "Uptown Springdale": 't101g00', 
+    "Mt. Wildwood": 't102g00', 
+    "Blossom Heights": 't103g00', 
+    "Downtown Springdale": 't104g00', 
+    "Shopper's Row": 't105g00', 
+    "Breezy Hills": 't106g00', 
+    "Nate's house F1": 't101i01', 
+    "Nate's house F2": 't101i02', 
+    "Katie's House F1": 't101i03', 
+    "Katie's House F2": 't101i04', 
+    "Banter Bakery": 't101i21', 
+    "Everymart Uptown": 't101i23', 
+    "Springdale Community Center": 't101i25', 
+    "Piggleston Bank": 't101i27', 
+    "Lambert Post Office": 't101i29', 
+    "Jungle Hunter": 't101i31', 
+    "Springdale Elementary 1F South": 't101i51', 
+    "Springdale Elementary 1F North": 't101i52', 
+    "Springdale Elementary 2F": 't101i53', 
+    "Springdale Elementary 3F": 't101i55', 
+    "Springdale Elementary Roof": 't101i58', 
+    "Springdale Elementary Gym": 't101i59', 
+    "Mt. Wildwood Cave": 't102i21', 
+    "Bernstein House 1F": 't103i01', 
+    "Bernstein House 2F": 't103i02', 
+    "Bernstein House 3F": 't103i03', 
+    "Timers & More": 't103i21', 
+    "Candy Stop": 't103i23', 
+    "Everymart Blossom Heights": 't103i25', 
+    "Hot Springs Lobby": 't103i27', 
+    "Hot Springs Baths": 't103b05', 
+    "Shoten Temple": 't103i31', 
+    "Prayer's Peak Tunnel": 't103i33', 
+    "Byrd House": 't103b07', 
+    "Byrd House Hidden Room": 't103i53', 
+    "Wayfarer Manor 101": 't103i60', 
+    "Wayfarer Manor 102": 't103i61', 
+    "Wayfarer Manor 103": 't103i62', 
+    "Wayfarer Manor 104": 't103i63', 
+    "Wayfarer Manor 105": 't103i64', 
+    "Wayfarer Manor 201": 't103i65', 
+    "Wayfarer Manor 202": 't103i66', 
+    "Wayfarer Manor 203": 't103i67', 
+    "Wayfarer Manor 204": 't103i68', 
+    "Wayfarer Manor VIP Room": 't103i69', 
+    "Seabreeze Tunnel": 't104i21', 
+    "Frostia's Place": 't104i23', 
+    "Arcadia Arcade": 't104i25', 
+    "Nom Burguer": 't104i27', 
+    "Fortune Hospital 1F": 't104i29', 
+    "Foundation Academy": 't104i31', 
+    "Everymart Downtown Springdale": 't104i33', 
+    "Springdale Business Tower 1F": 't104i51', 
+    "Springdale Business Tower 7F": 't104i53', 
+    "Springdale Central Station": 't104i61', 
+    "Springdale Flower Road": 't105i20', 
+    "Settle In Bookstore": 't105i21', 
+    "North Wind Ramen": 't105i23', 
+    "Everymart Shopper's Row": 't105i25', 
+    "Sun Pavilion": 't105i27', 
+    "Mary's Coin Laundry": 't105i31', 
+    "Superior Style": 't105i33', 
+    "Whatta Find": 't105i35', 
+    "Archer House 1F": 't106i01', 
+    "Archer House 2F": 't106i02', 
+    "Stone House": 't106i05', 
+    "Everymart Breezy Hills": 't106i21', 
+    "Trophy Room": 't106i23', 
+    "Wisteria Gardens Entrance": 't106i52', 
+    "Underground Waterway": 't100b41', 
+    "Shady Back Alley": 't101d01', 
+    "Lonely Waterway": 't101d02', 
+    "The Catwalk": 't101d03', 
+    "Desolate Lane": 't101d05', 
+    "Abandoned Tunnel West": 't102d31', 
+    "Abandoned Tunnel East": 't102d32', 
+    "Trucked Away Lot": 't103d01', 
+    "Hidden Side Street": 't103d03', 
+    "Secret Byway": 't103d11', 
+    "Old Mansion Main House": 't103d31', 
+    "Old Mansion Side House": 't103d33', 
+    "Old Mansion Main House Attic": 't103d35', 
+    "Old Mansion Side House Attic": 't103d36', 
+    "Infinite Inferno 1st Circle": 't103d41', 
+    "Infinite Inferno 2nd Circle": 't103d42', 
+    "Infinite Inferno 3rd Circle": 't103d43', 
+    "Infinite Inferno 4th Circle": 't103d44', 
+    "Infinite Inferno 5th Circle": 't103d45', 
+    "Infinite Inferno 6th Circle": 't103d46', 
+    "Infinite Inferno 7th Circle": 't103d47', 
+    "Infinite Inferno 8th Circle": 't103d48', 
+    "Academy Shortcut": 't104d01', 
+    "Behind Frostia's Place": 't104d03', 
+    "Delivery Bay": 't104d05', 
+    "Springdale Business Tower 4F": 't104d11', 
+    "Springdale Business Tower 13F": 't104d13', 
+    "Construction Site 1F": 't104d31', 
+    "Construction Site 2F": 't104d32', 
+    "Construction Site 3F": 't104d33', 
+    "Shopping Street Narrows": 't105d01', 
+    "Tranquility Apts. (A-103)": 't105d11', 
+    "Tranquility Apts. (A-204)": 't105d12', 
+    "Tranquility Apts. (A-301)": 't105d13', 
+    "Tranquility Apts. (B-102)": 't105d14', 
+    "Tranquility Apts. (B-201)": 't105d15', 
+    "Tranquility Apts. (B-203)": 't105d16', 
+    "Tranquility Apts. (B-301)": 't105d17', 
+    "Tranquility Apts. (C-101)": 't105d18', 
+    "Tranquility Apts. (C-103)": 't105d19', 
+    "Tranquility Apts. (C-202)": 't105d20', 
+    "Tranquility Apts. (C-204)": 't105d21', 
+    "Tranquility Apts. (C-303)": 't105d22', 
+    "Tranquility Apts. (A-202)": 't105d23', 
+    "Tranquility Apts. (B-104)": 't105d24', 
+    "Tranquility Apts. (C-304)": 't105d25', 
+    "Tranquility Apts. (C-301)": 't105d26', 
+    "Nocturne Hospital 1F": 't105d41', 
+    "Nocturne Hospital 2F": 't105d43', 
+    "Nocturne Hospital 3F": 't105d45', 
+    "Rugged Path": 't106d11', 
+    "Gourd Pond Museum 1F": 't106d31', 
+    "Gourd Pond Museum 2F": 't106d32', 
+    "Gourd Pond Museum Vault": 't106b23', 
+    "Yo-kai world Entrance": 't106d41', 
+    "Yo-kai world": 't106d42', 
+    "Liar Mountain": 't106b37', 
+    "Hooligan Road": 't106b39', 
+    "Hungry Pass": 't106b41', 
+    "Uptown Springdale (Bush)": 't100b01', 
+    "Mt. Wildwood (Bush)": 't100b02', 
+    "Catfish Pond": 't100b03', 
+    "Uptown Springdale (River)": 't100b04', 
+    "Breezy Hills Gourd Pond": 't100b05', 
+    "SV Snaggerjag Boss BG": 't100b06', 
+    "Suspicious Alleyway (Uptown Springdale)": 't100b21', 
+    "Suspicious Alleyway (Downtown Springdale)": 't100b22', 
+    "Suspicious Alleyway (Shopper's Row)": 't100b23', 
+    "Suspicious Alleyway (Blossom Heights)": 't100b24', 
+    "Tranquility Apt.": 't100b27', 
+    "Office": 't100b29', 
+    "Unusual Space": 't100b51', 
+    "Unusual Space (S Rank)": 't100b52', 
+    "PvP Arena": 't100b53', 
+    "Uptown Springdale (Town)": 't101b01', 
+    "Nate's house": 't101b02', 
+    "Katie's house": 't101b03', 
+    "Springdale Elementary (Classroom)": 't101b21', 
+    "Springdale Elementary (Bathroom)": 't101b23', 
+    "Springdale Elementary (Outside)": 't101b25', 
+    "Mt. Wildwood (Shrine)": 't102b01', 
+    "Mt. Wildwood (Final Boss)": 't102b03', 
+    "Abandoned Tunnel": 't102b21', 
+    "Abandoned Tunnel (Boss)": 't102b23', 
+    "Blossom Heights (Town)": 't103b01', 
+    "Blossom Heights (Bamboo Forest)": 't103b03', 
+    "Old Mansion": 't103b21', 
+    "Old Mansion (Attic)": 't103b23', 
+    "Infinite Inferno": 't103b31', 
+    "Infinite Inferno (Boss)": 't103b35', 
+    "Downtown Springdale (Town)": 't104b01', 
+    "Downtown Springdale (Sea)": 't104b03', 
+    "Construction Site": 't104b21', 
+    "Construction Site (Boss)": 't104b23', 
+    "Shopper's Row (Exterior)": 't105b01', 
+    "Shopper's Row (Interior)": 't105b03', 
+    "Nocturne Hospital": 't105b21', 
+    "Nocturne Hospital (Boss)": 't105b23', 
+    "Breezy Hills (Town)": 't106b01', 
+    "Gourd Pond Museum": 't106b21', 
+    "Yo-kai world (Red Gate)": 't106b31', 
+    "Yo-kai world (Blue Gate)": 't106b32', 
+    "Yo-kai world (Black Gate)": 't106b33', 
+    "Yo-kai world (White Gate)": 't106b35', 
+    "Yo-kai world (Boss)": 't106b43',
+}
+
+reverse_locations = {v.lower(): k for k, v in locations.items()}
+
+sunTimes = {
+    "Morning to Midday": 1, 
+	"Midday to Night": 2, 
+    "Night to Midnight": 3, 
+	"Midnight to Morning": 4, 
+}
+
+def get_input(prompt, validation):
+    while True:
+        user_input = input(prompt)
+        if user_input == "":
+            return ""
+        if user_input[0] in ["'", '"']: user_input = user_input[1:-1]
+        validated_input = validation(user_input)
+        if validated_input is not None:
+            return validated_input
+        else:
+            print("Invalid input!")
+
+def inject(f, mapID, xCoord, yCoord, zCoord, time, sunTime):
+    if mapID != "":
+        f.seek(72)
+        f.write(mapID.encode('utf-8'))
+    if xCoord != "":
+        f.seek(20)
+        f.write(int(xCoord).to_bytes(4, "little"))
+    if yCoord != "":
+        f.seek(24)
+        f.write(int(yCoord).to_bytes(4, "little"))
+    if zCoord != "":
+        f.seek(28)
+        f.write(int(zCoord).to_bytes(4, "little"))
+    if time != "":
+        f.seek(1488)
+        f.write(int(time).to_bytes(2, "little"))
+    if sunTime != "":
+        f.seek(1490)
+        f.write(int(sunTime).to_bytes(1, "little"))
+    f.seek(0)
+    out = f.read()
+    f.close()
+    return out #for the .yw files
