@@ -1,280 +1,1190 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <author>Woganog</author>
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>537</width>
-    <height>312</height>
-   </rect>
-  </property>
-  <property name="windowTitle">
-   <string>Yamba v1.3 GUI</string>
-  </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QLineEdit" name="saveFileName">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>50</y>
-      <width>241</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="saveFileText">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>30</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Save file:</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="browseFileName">
-    <property name="geometry">
-     <rect>
-      <x>270</x>
-      <y>50</y>
-      <width>75</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Browse...</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="xCoordText">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>160</y>
-      <width>51</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="yCoordText">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>190</y>
-      <width>51</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="zCoordText">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>220</y>
-      <width>51</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="saveFileText_2">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>160</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>X:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="saveFileText_3">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>190</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Y:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="saveFileText_4">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>220</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Z:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="saveFileText_5">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>100</y>
-      <width>31</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Map:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="mapText">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>100</y>
-      <width>61</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="goButton">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>230</y>
-      <width>91</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Go!</string>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="sunTimeComboBox">
-    <property name="geometry">
-     <rect>
-      <x>270</x>
-      <y>180</y>
-      <width>131</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <item>
-     <property name="text">
-      <string>Ignore</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Morning to Midday</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Midday to Night</string>
-     </property>
-    </item>
-	<item>
-     <property name="text">
-      <string>Night to Midnight</string>
-     </property>
-    </item>
-	<item>
-     <property name="text">
-      <string>Midnight to Morning</string>
-     </property>
-    </item>
-   </widget>
-   <widget class="QLabel" name="saveFileText_6">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>180</y>
-      <width>51</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Sun Time:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="timeText">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>150</y>
-      <width>51</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="saveFileText_7">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>150</y>
-      <width>181</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Time (between 0 and 65535):</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="woganogText">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>10</y>
-      <width>121</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Program by Woganog.</string>
-    </property>
-	<property name="openExternalLinks">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="mapCodeLink">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>100</y>
-      <width>261</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Map codes can be found here!</string>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="keepDecryptedCheckBox">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>230</y>
-      <width>161</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Keep decrypted save file?</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
- </widget>
- <resources/>
- <connections/>
+    <author>Woganog</author>
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>537</width>
+                <height>312</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Yamba</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <widget class="QLineEdit" name="saveFileName">
+                <property name="geometry">
+                    <rect>
+                        <x>30</x>
+                        <y>50</y>
+                        <width>241</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel" name="saveFileText">
+                <property name="geometry">
+                    <rect>
+                        <x>30</x>
+                        <y>30</y>
+                        <width>51</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Save file:</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="browseFileName">
+                <property name="geometry">
+                    <rect>
+                        <x>280</x>
+                        <y>46</y>
+                        <width>75</width>
+                        <height>28</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Browse...</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="coordRange">
+                <property name="geometry">
+                    <rect>
+                        <x>58</x>
+                        <y>135</y>
+                        <width>200</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>0 to 4294967295</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit" name="xCoordText">
+                <property name="geometry">
+                    <rect>
+                        <x>70</x>
+                        <y>160</y>
+                        <width>87</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLineEdit" name="yCoordText">
+                <property name="geometry">
+                    <rect>
+                        <x>70</x>
+                        <y>190</y>
+                        <width>87</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLineEdit" name="zCoordText">
+                <property name="geometry">
+                    <rect>
+                        <x>70</x>
+                        <y>220</y>
+                        <width>87</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel" name="saveFileText_2">
+                <property name="geometry">
+                    <rect>
+                        <x>40</x>
+                        <y>160</y>
+                        <width>16</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>X:</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="saveFileText_3">
+                <property name="geometry">
+                    <rect>
+                        <x>40</x>
+                        <y>190</y>
+                        <width>16</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Y:</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="saveFileText_4">
+                <property name="geometry">
+                    <rect>
+                        <x>40</x>
+                        <y>220</y>
+                        <width>16</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Z:</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="saveFileText_5">
+                <property name="geometry">
+                    <rect>
+                        <x>30</x>
+                        <y>100</y>
+                        <width>31</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Map:</string>
+                </property>
+            </widget>
+            <widget class="QComboBox" name="mapText">
+                <property name="geometry">
+                    <rect>
+                        <x>70</x>
+                        <y>100</y>
+                        <width>310</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <item>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Uptown Springdale</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Mt. Wildwood</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Blossom Heights</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Downtown Springdale</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Shopper's Row</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Breezy Hills</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Nate's house F1</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Nate's house F2</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Katie's House F1</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Katie's House F2</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Banter Bakery</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Everymart Uptown</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Springdale Community Center</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Piggleston Bank</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Lambert Post Office</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Jungle Hunter</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Springdale Elementary 1F South</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Springdale Elementary 1F North</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Springdale Elementary 2F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Springdale Elementary 3F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Springdale Elementary Roof</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Springdale Elementary Gym</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Mt. Wildwood Cave</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Bernstein House 1F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Bernstein House 2F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Bernstein House 3F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Timers &amp; More</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Candy Stop</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Everymart Blossom Heights</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Hot Springs Lobby</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Hot Springs Baths</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Shoten Temple</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Prayer's Peak Tunnel</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Byrd House</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Byrd House Hidden Room</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Wayfarer Manor 101</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Wayfarer Manor 102</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Wayfarer Manor 103</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Wayfarer Manor 104</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Wayfarer Manor 105</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Wayfarer Manor 201</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Wayfarer Manor 202</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Wayfarer Manor 203</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Wayfarer Manor 204</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Wayfarer Manor VIP Room</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Seabreeze Tunnel</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Frostia's Place</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Arcadia Arcade</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Nom Burguer</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Fortune Hospital 1F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Foundation Academy</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Everymart Downtown Springdale</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Springdale Business Tower 1F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Springdale Business Tower 7F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Springdale Central Station</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Springdale Flower Road</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Settle In Bookstore</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>North Wind Ramen</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Everymart Shopper's Row</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Sun Pavilion</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Mary's Coin Laundry</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Superior Style</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Whatta Find</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Archer House 1F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Archer House 2F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Stone House</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Everymart Breezy Hills</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Trophy Room</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Wisteria Gardens Entrance</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Underground Waterway</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Shady Back Alley</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Lonely Waterway</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>The Catwalk</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Desolate Lane</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Abandoned Tunnel West</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Abandoned Tunnel East</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Trucked Away Lot</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Hidden Side Street</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Secret Byway</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Old Mansion Main House</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Old Mansion Side House</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Old Mansion Main House Attic</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Old Mansion Side House Attic</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Infinite Inferno 1st Circle</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Infinite Inferno 2nd Circle</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Infinite Inferno 3rd Circle</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Infinite Inferno 4th Circle</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Infinite Inferno 5th Circle</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Infinite Inferno 6th Circle</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Infinite Inferno 7th Circle</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Infinite Inferno 8th Circle</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Academy Shortcut</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Behind Frostia's Place</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Delivery Bay</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Springdale Business Tower 4F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Springdale Business Tower 13F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Construction Site 1F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Construction Site 2F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Construction Site 3F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Shopping Street Narrows</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Tranquility Apts. (A-103)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Tranquility Apts. (A-204)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Tranquility Apts. (A-301)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Tranquility Apts. (B-102)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Tranquility Apts. (B-201)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Tranquility Apts. (B-203)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Tranquility Apts. (B-301)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Tranquility Apts. (C-101)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Tranquility Apts. (C-103)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Tranquility Apts. (C-202)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Tranquility Apts. (C-204)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Tranquility Apts. (C-303)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Tranquility Apts. (A-202)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Tranquility Apts. (B-104)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Tranquility Apts. (C-304)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Tranquility Apts. (C-301)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Nocturne Hospital 1F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Nocturne Hospital 2F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Nocturne Hospital 3F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Rugged Path</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Gourd Pond Museum 1F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Gourd Pond Museum 2F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Gourd Pond Museum Vault</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Yo-kai world Entrance</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Yo-kai world</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Liar Mountain</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Hooligan Road</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Hungry Pass</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Uptown Springdale (Bush)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Mt. Wildwood (Bush)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Catfish Pond</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Uptown Springdale (River)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Breezy Hills Gourd Pond</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>SV Snaggerjag Boss BG</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Suspicious Alleyway (Uptown Springdale)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Suspicious Alleyway (Downtown Springdale)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Suspicious Alleyway (Shopper's Row)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Suspicious Alleyway (Blossom Heights)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Tranquility Apt.</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Office</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Underground Waterway</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Unusual Space</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Unusual Space (S Rank)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>PvP Arena</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Uptown Springdale (Town)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Nate's house</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Katie's house</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Springdale Elementary (Classroom)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Springdale Elementary (Bathroom)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Springdale Elementary (Outside)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Mt. Wildwood (Shrine)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Mt. Wildwood (Final Boss)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Abandoned Tunnel</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Abandoned Tunnel (Boss)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Blossom Heights (Town)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Blossom Heights (Bamboo Forest)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Hot Springs Baths</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Byrd House</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Old Mansion</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Old Mansion (Attic)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Infinite Inferno</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Infinite Inferno (Boss)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Downtown Springdale (Town)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Downtown Springdale (Sea)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Construction Site</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Construction Site (Boss)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Shopper's Row (Exterior)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Shopper's Row (Interior)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Nocturne Hospital</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Nocturne Hospital (Boss)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Breezy Hills (Town)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Gourd Pond Museum</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Gourd Pond Museum Vault</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Yo-kai world (Red Gate)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Yo-kai world (Blue Gate)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Yo-kai world (Black Gate)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Yo-kai world (White Gate)</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Liar Mountain</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Hooligan Road</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Hungry Pass</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Yo-kai world (Boss)</string>
+                    </property>
+                </item>
+            </widget>
+            <widget class="QPushButton" name="goButton">
+                <property name="geometry">
+                    <rect>
+                        <x>430</x>
+                        <y>230</y>
+                        <width>91</width>
+                        <height>61</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Go!</string>
+                </property>
+            </widget>
+            <widget class="QComboBox" name="sunTimeComboBox">
+                <property name="geometry">
+                    <rect>
+                        <x>230</x>
+                        <y>190</y>
+                        <width>178</width>
+                        <height>22</height>
+                    </rect>
+                </property>
+                <item>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Morning to Midday</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Midday to Night</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Night to Midnight</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>Midnight to Morning</string>
+                    </property>
+                </item>
+            </widget>
+            <widget class="QLabel" name="saveFileText_6">
+                <property name="geometry">
+                    <rect>
+                        <x>170</x>
+                        <y>188</y>
+                        <width>58</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Sun Time:</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit" name="timeText">
+                <property name="geometry">
+                    <rect>
+                        <x>350</x>
+                        <y>160</y>
+                        <width>51</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel" name="saveFileText_7">
+                <property name="geometry">
+                    <rect>
+                        <x>170</x>
+                        <y>160</y>
+                        <width>181</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Time (between 0 and 65535):</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="woganogText">
+                <property name="geometry">
+                    <rect>
+                        <x>400</x>
+                        <y>10</y>
+                        <width>137</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Program by Woganog.</string>
+                </property>
+                <property name="openExternalLinks">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <widget class="QLabel" name="emiliaText">
+                <property name="geometry">
+                    <rect>
+                        <x>467</x>
+                        <y>31</y>
+                        <width>137</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>and Emilia.</string>
+                </property>
+                <property name="openExternalLinks">
+                    <bool>true</bool>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QStatusBar" name="statusbar" />
+    </widget>
+    <resources />
+    <connections />
 </ui>
