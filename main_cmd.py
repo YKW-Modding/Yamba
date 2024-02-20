@@ -12,6 +12,17 @@ def main():
 		print("Too long for a map ID!")
 		main()
 	
+	rankIn = input("Rank (0 = E, 1 = D, 2 = C, 3 = B, 4 = A, 5 = S): ")
+	if rankIn != "skip":
+		try:
+			rank = int(rankIn)
+		except ValueError:
+			print("Invalid input!")
+			main()
+		if not 0 <= rank <= 5:
+			print("Invalid input!")
+			main()
+	
 	xCoordIn = input("X Coordinate: ")
 	if xCoordIn != "skip":
 		try:
@@ -67,6 +78,9 @@ def main():
 		if map != "skip":
 			f.seek(72)
 			f.write(bytes(map, 'utf-8'))
+		if rankIn != "skip":
+			f.seek(100)
+			f.write(rank.to_bytes(1, byteorder = "big", signed = True))
 		if xCoordIn != "skip":
 			f.seek(20)
 			f.write(xCoord.to_bytes(4, byteorder = "big", signed = True))
