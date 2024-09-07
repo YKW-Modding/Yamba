@@ -1,4 +1,3 @@
-import mmap
 import os
 import sys
 
@@ -103,7 +102,10 @@ def main():
 				f.write(int.to_bytes(3, 1, byteorder = "big"))
 			if sunTime == 4:
 				f.write(int.to_bytes(4, 1, byteorder = "big"))
-			
+	
+	if os.path.exists("output.yw"):
+		print("Output file already exists, deleting.")
+		os.remove("output.yw")
 	os.system("python yw_save/yw_save.py --game yw --encrypt decrypted.yw output.yw")
 	
 	if keepDecrypted == "n":
